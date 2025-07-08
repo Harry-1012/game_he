@@ -1,0 +1,263 @@
+<!DOCTYPE html><html lang=zh-CN data-theme=light><head><meta charset=UTF-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Type | 🎮游戏@H&amp;E工作室</title><meta name=author content=H&E工作室><meta name=copyright content=H&E工作室><meta name=format-detection content="telephone=no"><meta name=theme-color content=#ffffff><script src=/js/allpost_data.js></script><meta property=og:type content=website><meta property=og:title content=Type><meta property=og:url content=https://game.harryeve.com/categories/index.html><meta property=og:site_name content=🎮游戏@H&E工作室><meta property=og:locale content=zh_CN><meta property=og:image content=https://ihogu-1251903635.cos.ap-shanghai.myqcloud.com/site/img/avatar.png><meta property=article:published_time content=2019-07-29T04:28:12.000Z><meta property=article:modified_time content=2025-07-07T10:42:46.166Z><meta property=article:author content=H&E工作室><meta name=twitter:card content=summary><meta name=twitter:image content=https://ihogu-1251903635.cos.ap-shanghai.myqcloud.com/site/img/avatar.png><link rel="shortcut icon" href=https://ihogu-1251903635.cos.ap-shanghai.myqcloud.com/site/img/favicon.ico><link rel=canonical href=https://game.harryeve.com/categories/index.html><link rel=preconnect href=//unpkg.com><link rel=stylesheet href=/css/index.css><link rel=stylesheet href=https://unpkg.com/@fortawesome/fontawesome-free/css/all.min.css><link rel=stylesheet href=https://unpkg.com/@fancyapps/ui/dist/fancybox/fancybox.css media=print onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: {"appId":"OYM6GQ9CYM","apiKey":"747008614da85370fdd9b192df0f040b","indexName":"game_harryeve_com_oym6gq9cym_pages","hitsPerPage":6,"languages":{"input_placeholder":"请输入要搜索的内容","hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，耗时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://unpkg.com/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id=config-diff>var GLOBAL_CONFIG_SITE = {
+  title: 'Type',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><link rel=stylesheet href=https://app.harryeve.com/my/theme/css/work.css><meta name=generator content="Hexo 7.3.0"><link rel=alternate href=/atom.xml title=🎮游戏@H&E工作室 type=application/atom+xml></head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+btf.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+
+</script><link rel=stylesheet href=https://unpkg.com/pace-js/themes/blue/pace-theme-minimal.css><script src=https://unpkg.com/pace-js/pace.min.js></script><div id=sidebar><div id=menu-mask></div><div id=sidebar-menus><div class="avatar-img text-center"><img src=data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 data-lazy-src=https://ihogu-1251903635.cos.ap-shanghai.myqcloud.com/site/img/avatar.png onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt=avatar></div><div class="site-data text-center"><a href=/archives/ ><div class=headline>项目</div><div class=length-num>2</div></a><a href=/tags/ ><div class=headline>标签</div><div class=length-num>3</div></a><a href=/categories/ ><div class=headline>分类</div><div class=length-num>1</div></a></div><div class=menus_items><div class=menus_item><a class=site-page target=_blank rel=noopener href=https://app.harryeve.com><span> 📱应用</span></a></div><div class=menus_item><a href=/about/ class=site-page><span> 🧑‍💻关于</span></a></div><div class=menus_item><a class=site-page target=_blank rel=noopener href=https:/en.game.harryeve.com><span> 🌏En</span></a></div></div></div></div><div class="page type-categories" id=body-wrap><header class=not-top-img id=page-header><nav id=nav><span id=blog-info><a href=/ class=nav-site-title><span class=site-name>🎮游戏@H&amp;E工作室</span></a></span><div id=menus><div id=search-button><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class=menus_items><div class=menus_item><a class=site-page target=_blank rel=noopener href=https://app.harryeve.com><span> 📱应用</span></a></div><div class=menus_item><a href=/about/ class=site-page><span> 🧑‍💻关于</span></a></div><div class=menus_item><a class=site-page target=_blank rel=noopener href=https:/en.game.harryeve.com><span> 🌏En</span></a></div></div><div id=toggle-menu><span class=site-page><i class="fas fa-bars fa-fw"></i></span></div></div></nav><h1 class=title-seo>Type</h1></header><main class="layout hide-aside" id=content-inner><div id=page><div class=page-title>Type</div><div class=category-lists><ul class=category-list><li class=category-list-item><a href=/categories/Mobile-Mini/ class=category-list-link>Mobile-Mini</a><span class=category-list-count>2</span></li></ul></div><hr class=custom-hr><div id=post-comment><div class=comment-head><div class=comment-headline><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class=comment-wrap><div><div id=disqus_thread></div></div></div></div></div></main><footer id=footer><div id=footer-wrap><div class=copyright>&copy;2017 - 2025 By H&E工作室</div><script src=/js/harry/index_showmore.js></script></div></footer></div><div id=rightside><div id=rightside-config-hide><button id=darkmode type=button title=日间和夜间模式切换><i class="fas fa-adjust"></i></button></div><div id=rightside-config-show><button id=rightside-config type=button title=设置><i class="fas fa-cog fa-spin"></i></button><button id=chat-btn type=button title=聊天 style=display:none><i class="fas fa-message"></i></button><a id=to_comment href=#post-comment title=前往评论><i class="fas fa-comments"></i></a><button id=go-up type=button title=回到顶部><span class=scroll-percent></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src=https://unpkg.com/hexo-theme-butterfly/source/js/utils.js></script><script src=https://unpkg.com/hexo-theme-butterfly/source/js/main.js></script><script src=https://unpkg.com/@fancyapps/ui/dist/fancybox/fancybox.umd.js></script><script src=https://unpkg.com/vanilla-lazyload/dist/lazyload.iife.min.js></script><div class=js-pjax><script>(() => {
+  const abcjsInit = () => {
+    const abcjsFn = () => setTimeout(() => {
+      document.querySelectorAll(".abc-music-sheet").forEach(ele => {
+        if (ele.children.length > 0) return
+        ABCJS.renderAbc(ele, ele.innerHTML, {responsive: 'resize'})
+      })
+    }, 100)
+    
+    typeof ABCJS === 'object' ? abcjsFn()
+      : btf.getScript('https://unpkg.com/abcjs/dist/abcjs-basic-min.js').then(abcjsFn)
+  }
+
+  window.pjax ? abcjsInit() : window.addEventListener('load', abcjsInit)
+  btf.addGlobalFn('encrypt', abcjsInit, 'abcjs')
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+
+  const disqusReset = conf => {
+    window.DISQUS && window.DISQUS.reset({
+      reload: true,
+      config: conf
+    })
+  }
+
+  const loadDisqus = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyDisqus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    window.disqus_identifier = isShuoshuo ? path : '/categories/index.html'
+    window.disqus_url = isShuoshuo ? location.origin + path : 'https://game.harryeve.com/categories/index.html'
+
+    const disqus_config = function () {
+      this.page.url = disqus_url
+      this.page.identifier = disqus_identifier
+      this.page.title = 'Type'
+    }
+
+    if (window.DISQUS) disqusReset(disqus_config)
+    else {
+      const script = document.createElement('script')
+      script.src = 'https://game-harryeve-com.disqus.com/embed.js'
+      script.setAttribute('data-timestamp', +new Date())
+      document.head.appendChild(script)
+    }
+
+    btf.addGlobalFn('themeChange', () => disqusReset(disqus_config), 'disqus')
+  }
+
+  const getCount = async() => {
+    try {
+      const eleGroup = document.querySelector('#post-meta .disqus-comment-count')
+      if (!eleGroup) return
+      const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
+
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=game-harryeve-com&api_key=vDoFuSLY710tgFaifm990szRug65MmxKIYuj9jqYXMA0Ofz2ZRGjzb9o9Fo9bpYa&thread:link=${cleanedLinks}`,{
+        method: 'GET'
+      })
+      const result = await res.json()
+
+      const count = result.response.length ? result.response[0].posts : 0
+      eleGroup.textContent = count
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Disqus' === 'Disqus'
+      ? window.shuoshuoComment = { loadComment: loadDisqus }
+      : window.loadOtherComment = loadDisqus
+    return
+  }
+
+  if ('Disqus' === 'Disqus' || !false) {
+    if (false) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+    else {
+      loadDisqus()
+      
+    }
+  } else {
+    window.loadOtherComment = loadDisqus
+  }
+})()</script></div><script src=https://app.harryeve.com/my/theme/js/work.js></script><script src=https://unpkg.com/butterfly-extsrc/dist/activate-power-mode.min.js></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script>(() => {
+  window.ChatraID = '4REEYKj5Agwn659M7'
+  window.Chatra = window.Chatra || function() {
+    (window.Chatra.q = window.Chatra.q || []).push(arguments)
+  }
+
+  btf.getScript('https://call.chatra.io/chatra.js').then(() => {
+    const isChatBtn = true
+    const isChatHideShow = false
+
+    if (isChatBtn) {
+      const close = () => {
+        Chatra('minimizeWidget')
+        Chatra('hide')
+      }
+
+      const open = () => {
+        Chatra('openChat', true)
+        Chatra('show')
+      }
+
+      window.ChatraSetup = { startHidden: true }
+    
+      window.chatBtnFn = () => document.getElementById('chatra').classList.contains('chatra--expanded') ? close() : open()
+
+      document.getElementById('chat-btn').style.display = 'block'
+    } else if (isChatHideShow) {
+      window.chatBtn = {
+        hide: () => Chatra('hide'),
+        show: () => Chatra('show')
+      }
+    }
+  })
+})()</script><div id=algolia-search><div class=search-dialog><nav class=search-nav><span class=search-dialog-title>搜索</span><button class=search-close-button><i class="fas fa-times"></i></button></nav><div class=search-wrap><div id=algolia-search-input></div><hr><div id=algolia-search-results><div id=algolia-hits></div><div id=algolia-pagination></div><div id=algolia-info><div class=algolia-stats></div><div class=algolia-poweredBy></div></div></div></div></div><div id=search-mask></div><script src=https://unpkg.com/algoliasearch/dist/lite/builds/browser.umd.js></script><script src=https://unpkg.com/instantsearch.js/dist/instantsearch.production.min.js></script><script src=https://unpkg.com/hexo-theme-butterfly/source/js/search/algolia.js></script></div></div></body></html>

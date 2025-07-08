@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>🎮游戏@H&amp;E工作室</title>
+  
+  <subtitle>独立游戏开发者</subtitle>
+  <link href="https://game.harryeve.com/atom.xml" rel="self"/>
+  
+  <link href="https://game.harryeve.com/"/>
+  <updated>2025-07-07T11:15:10.520Z</updated>
+  <id>https://game.harryeve.com/</id>
+  
+  <author>
+    <name>H&amp;E工作室</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Douyin Quiz Game</title>
+    <link href="https://game.harryeve.com/p/13912/"/>
+    <id>https://game.harryeve.com/p/13912/</id>
+    <published>2024-08-31T16:00:00.000Z</published>
+    <updated>2025-07-07T11:15:10.520Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>Douyin video ad incentive quiz mini-game, Douyin live quiz mini-game</li></ul><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"https://ihogu-1251903635.cos.ap-shanghai.myqcloud.com/site/work/app/douyindatixiaoyouxi/1.jpg","alt":"","title":""},{"url":"https://ihogu-1251903635.cos.ap-shanghai.myqcloud.com/site/work/app/douyindatixiaoyouxi/2.jpg","alt":"","title":""},{"url":"https://ihogu-1251903635.cos.ap-shanghai.myqcloud.com/site/work/app/douyindatixiaoyouxi/3.jpg","alt":"","title":""}]</div>  </div><p><a href="javascript:history.go(-1)">⬅Back to previous page</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;Douyin video ad incentive quiz mini-game, Douyin live quiz mini-game&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gallery-container&quot; data-type=&quot;data&quot; dat</summary>
+      
+    
+    
+    
+    <category term="Mobile-Mini" scheme="https://game.harryeve.com/categories/Mobile-Mini/"/>
+    
+    
+    <category term="Entertainment" scheme="https://game.harryeve.com/tags/Entertainment/"/>
+    
+    <category term="Social" scheme="https://game.harryeve.com/tags/Social/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Garbage Classification WeChat Mini Game</title>
+    <link href="https://game.harryeve.com/p/58413/"/>
+    <id>https://game.harryeve.com/p/58413/</id>
+    <published>2020-07-09T16:00:00.000Z</published>
+    <updated>2025-07-07T11:14:55.804Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>Learn garbage classification with a WeChat drop mini game</li></ul><div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">    <div class="gallery-items">[{"url":"https://ihogu-1251903635.cos.ap-shanghai.myqcloud.com/site/work/wechat/lajifenlei/lajifenlei.png","alt":"","title":""},{"url":"https://ihogu-1251903635.cos.ap-shanghai.myqcloud.com/site/work/wechat/lajifenlei/lajifenlei_qr.png","alt":"","title":""}]</div>  </div><p><a href="javascript:history.go(-1)">⬅Back to previous page</a></p>]]></content>
+    
+    
+    <summary type="html">Learn garbage classification with a WeChat drop mini game</summary>
+    
+    
+    
+    <category term="Mobile-Mini" scheme="https://game.harryeve.com/categories/Mobile-Mini/"/>
+    
+    
+    <category term="Entertainment" scheme="https://game.harryeve.com/tags/Entertainment/"/>
+    
+    <category term="Life Services" scheme="https://game.harryeve.com/tags/Life-Services/"/>
+    
+  </entry>
+  
+</feed>
